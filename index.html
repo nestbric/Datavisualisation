@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto Mathématiques et Médias</title>
     <style>
         body {
             margin: 0;
             padding: 0;
         }
 
-        .iframe-container {
-            margin: 20px; /* 2 cm de margen alrededor */
-            overflow: hidden;
-            height: auto; /* Ajusta la altura automáticamente al contenido */
+        h2 {
+            margin-top: 20px; /* Ajusta según sea necesario */
         }
 
         iframe {
             width: 100%;
-            height: 100%;
+            height: 500px; /* Ajusta según sea necesario */
             border: none;
+        }
+
+        .navigation-button {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#visualisation1">Visualisation 1</a></li>
+            <li><a href="#visualisation2">Visualisation 2</a></li>
+            <li><a href="#visualisation3">Visualisation 3</a></li>
+        </ul>
+    </nav>
+
     <h1> Lien entre Mathématiques et Médias </h1>
-    <!-- ... (tu contenido HTML) ... -->
-    
-    <div class="iframe-container">
-        <h2>Visualisation quantitative</h2>
-        <p>La première visualisation explore les types d'applications développées dans chaque type de pensée mathématique.</p>
-        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTPGQHljJ7n446f7CZUU18gsQb4RpKq1OTlyCE7OeVaWfZh9gHN2PqBb5RFSXymFaj-1HJhukaDcuC/pubchart?oid=1867283074&format=interactive"></iframe>
-    </div>
+    <p>Bienvenue au site du projet: L’intersection de l’éducation aux médias et de l’enseignement des mathématiques.</p>
 
-    <div class="iframe-container">
-        <h2>Visualisation quantitative</h2>
-        <p>La deuxième visualisation.</p>
-        <iframe src="https://storiiies.cogapp.com/viewer/4c5cz/Attributs-visuels-logiciel-mathmatiques?embed=true" title="Attributs visuels logiciel mathématiques"></iframe>
-    </div>
+    <h2 id="visualisation1">Visualisation quantitative 1</h2>
+    <p>La première visualisation explore les types d'applications développées dans chaque type de pensée mathématique.</p>
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTPGQHljJ7n446f7CZUU18gsQb4RpKq1OTlyCE7OeVaWfZh9gHN2PqBb5RFSXymFaj-1HJhukaDcuC/pubchart?oid=1867283074&format=interactive"></iframe>
+    <a href="#" class="navigation-button">Retour au Menu</a>
 
-    <div class="iframe-container">
-        <h2>Visualisation quantitative</h2>
-        <p>La troisième visualisation.</p>
-        <iframe src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamiqueLabel%20%3Fusage%20%3FusageLabel%20%3Flangage_de_programmation%20%3Flangage_de_programmationLabel%20%3Fsyst%C3%A8me_d_exploitation%20%3Fsyst%C3%A8me_d_exploitationLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP31%20wd%3AQ26726974.%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP366%20%3Fusage.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP277%20%3Flangage_de_programmation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP306%20%3Fsyst%C3%A8me_d_exploitation.%20%7D%0A%7D%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-    </div>
+    <h2 id="visualisation2">Visualisation quantitative 2</h2>
+    <p>La deuxième visualisation.</p>
+    <iframe src="https://storiiies.cogapp.com/viewer/4c5cz/Attributs-visuels-logiciel-mathmatiques?embed=true" title="Attributs visuels logiciel mathématiques"></iframe>
+    <a href="#" class="navigation-button">Retour au Menu</a>
+
+    <h2 id="visualisation3">Visualisation quantitative 3</h2>
+    <p>La troisième visualisation.</p>
+    <iframe src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamiqueLabel%20%3Fusage%20%3FusageLabel%20%3Flangage_de_programmation%20%3Flangage_de_programmationLabel%20%3Fsyst%C3%A8me_d_exploitation%20%3Fsyst%C3%A8me_d_exploitationLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP31%20wd%3AQ26726974.%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP366%20%3Fusage.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP277%20%3Flangage_de_programmation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP306%20%3Fsyst%C3%A8me_d_exploitation.%20%7D%0A%7D%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+    <a href="#" class="navigation-button">Retour au Menu</a>
 </body>
 </html>
-
