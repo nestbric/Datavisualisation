@@ -1,4 +1,4 @@
-## Titre du ficher readme [Lien entre Mathématiques et Médias]
+## Titre du ficher readme [Communauté Mathématique Récréative Numérique]
 https://nestbric.github.io/Datavisualisation/
 
 #todo
