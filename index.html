@@ -92,9 +92,10 @@ h1 {
         <button id="presentation-button" onclick="showPresentation()">Présentation du projet</button>
         <ul>
             <li><a href="#visualisation1">Visualisation type circulaire</a></li>
-            <li><a href="#visualisation2">Visualisation type stories</a></li>
-            <li><a href="#visualisation3">Visualisation type graphes</a></li>
-            <li><a href="#visualisation4">Visualisation type text</a></li>
+            <li><a href="#visualisation2">Visualisation type correlations</a></li>
+            <li><a href="#visualisation3">Visualisation type stories</a></li>
+            <li><a href="#visualisation4">Visualisation type graphes</a></li>
+            <li><a href="#visualisation5">Visualisation type text</a></li>
         </ul>
     </div>
 
@@ -105,18 +106,21 @@ h1 {
         <h2 id="visualisation1">Visualisation type circulaire </h2>
         <p>La première visualisation: Explore les différentes catégories d'applications développées dans chaque domaine de la pensée mathématique (système de calcul, système algébrique, logiciel de géométrie, statistique). On y observe comment le nombre d'applications entre le calcul et la géométrie partage le plus grand nombre de logiciels créés pour ces types de pensées. Les données utilisées dans ce graphique ont été obtenues à partir de Wikidata en filtrant les termes "logiciel de géométrie", "logiciel de calcul", "logiciel de statistique", et "logiciel algébrique", en affichant ensuite "l'usage" pour mettre en relation les utilisations de chaque logiciel avec leurs applications potentielles dans les différents types de pensée mathématique et à la fin en utilisant google sheets et le type de graphique type circulaire ou camembert.</p>
         <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTPGQHljJ7n446f7CZUU18gsQb4RpKq1OTlyCE7OeVaWfZh9gHN2PqBb5RFSXymFaj-1HJhukaDcuC/pubchart?oid=1867283074&format=interactive"></iframe>
+       
+        <h2 id="visualisation2">Visualisation type correlation </h2>
+        <p>La deuxième visualisation: Explore les différentes catégories d'applications développées dans chaque domaine de la pensée mathématique (systèmes de calcul, systèmes algébriques, logiciels de géométrie, statistiques) à partir de la base de données précédente. Ce diagramme a été réalisé à l'aide de https://www.rawgraphs.io/ en utilisant l'option "Diagramme alluvial" et en permettant de faire correspondre les types de logiciels à chacun des types de pensée mathématique. Il est à noter qu'il a été exploré avec les options "Chart Variable" et "Customize" jusqu'à l'obtention du graphique. Le plus précieux a été de trouver un moyen de visualiser les informations ci-dessus, mais en rendant la corrélation explicite, en montrant les coïncidences et les programmes spécifiques pour chaque type de pensée.</p>
         <a href="https://imgur.com/lpjo7O6"><img src="https://i.imgur.com/lpjo7O6.png" title="source: imgur.com" /></a>
         
-        <h2 id="visualisation2">Visualisation type stories</h2>
-        <p>La deuxième visualisation: Explore les différents types d'images trouvées sur Google autour des "types d'applications en géométrie", les principales trouvées étaient Geogebra, Cabri, Cinderela entre autres. Ici, la couleur de l'interface de chaque application nous donne la possibilité de classer selon la variation entre ceux qui utilisent la couleur et les plus neutres ou vibrants. </p>
+        <h2 id="visualisation3">Visualisation type stories</h2>
+        <p>La troisième visualisation: Explore les différents types d'images trouvées sur Google autour des "types d'applications en géométrie", les principales trouvées étaient Geogebra, Cabri, Cinderela entre autres. Ici, la couleur de l'interface de chaque application nous donne la possibilité de classer selon la variation entre ceux qui utilisent la couleur et les plus neutres ou vibrants. </p>
         <iframe src="https://storiiies.cogapp.com/viewer/4c5cz/Attributs-visuels-logiciel-mathmatiques?embed=true" title="Attributs visuels logiciel mathématiques"></iframe>
 
-        <h2 id="visualisation3">Visualisation type graphes</h2>
-        <p>La troisième visualisation: Ici, l'une des propres visualisations de Wikidata est utilisée. Lors de la première recherche autour des "logiciels de géométrie", une relation intéressante a été trouvée avec l'utilisation (usage) de sujets ou de contenus mathématiques qui pourraient être utilisés pour résoudre des problèmes. </p>
+        <h2 id="visualisation4">Visualisation type graphes</h2>
+        <p>La quatrième visualisation: Ici, l'une des propres visualisations de Wikidata est utilisée. Lors de la première recherche autour des "logiciels de géométrie", une relation intéressante a été trouvée avec l'utilisation (usage) de sujets ou de contenus mathématiques qui pourraient être utilisés pour résoudre des problèmes. </p>
         <iframe src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamiqueLabel%20%3Fusage%20%3FusageLabel%20%3Flangage_de_programmation%20%3Flangage_de_programmationLabel%20%3Fsyst%C3%A8me_d_exploitation%20%3Fsyst%C3%A8me_d_exploitationLabel%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP31%20wd%3AQ26726974.%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP366%20%3Fusage.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP277%20%3Flangage_de_programmation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Flogiciel_de_g%C3%A9om%C3%A9trie_dynamique%20wdt%3AP306%20%3Fsyst%C3%A8me_d_exploitation.%20%7D%0A%7D%0A" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
    
-        <h2 id="visualisation4">Visualisation type text</h2>
-        <p>La quatrième visualisation: À l'aide d'une des histoires mathématiques trouvées en ligne <a href="https://reverbereeducation.com/contes-mathematiques/conte-1/" target="_blank">Petits contes mathématiques</a>, on observe la visualisation du texte et la possibilité d'analyser ses mots clés, en explorant également ceux qui sont plus fréquents et qui peuvent être directement liés aux problèmes qui y sont décrits. </p>
+        <h2 id="visualisation5">Visualisation type text</h2>
+        <p>La cinquième visualisation: À l'aide d'une des histoires mathématiques trouvées en ligne <a href="https://reverbereeducation.com/contes-mathematiques/conte-1/" target="_blank">Petits contes mathématiques</a>, on observe la visualisation du texte et la possibilité d'analyser ses mots clés, en explorant également ceux qui sont plus fréquents et qui peuvent être directement liés aux problèmes qui y sont décrits. </p>
         <p>Text(histoire mathématique)</p>
         <iframe style='width: 452px; height: 285px;' src='https://voyant-tools.org/tool/Reader/?skipToDocId=224e9d43241c6b33d5dc202e310c9144&corpus=af829f67f83c3aa3ef4b04e1c1f64bb1'></iframe>
         <p>Mots nuage</p>
