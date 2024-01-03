@@ -96,6 +96,7 @@ h1 {
             <li><a href="#visualisation3">Visualisation type stories</a></li>
             <li><a href="#visualisation4">Visualisation type graphes</a></li>
             <li><a href="#visualisation5">Visualisation type text</a></li>
+            <li><a href="#visualisation6">Visualisation type temporelle</a></li>
         </ul>
     </div>
 
@@ -129,6 +130,11 @@ h1 {
         <iframe style='width: 452px; height: 285px;' src='https://voyant-tools.org/tool/Trends/?query=jacob&query=st%C3%A9phanie&query=amis&query=crayon&query=philippe&mode=document&corpus=af829f67f83c3aa3ef4b04e1c1f64bb1'></iframe>
         <p>Analyse avec un arbre des mots</p>
         <iframe width="800" height="1000" src="https://www.jasondavies.com/wordtree/?source=7dfc5409e9274e8476dddfdb43998a94&prefix=crayon&reverse=0&phrase-line=1"></iframe>
+        
+        <h2 id="visualisation6">Visualisation type temporelle</h2>
+        <p>La sixième visualisation: Ici, l'une des propres visualisations de Wikidata est utilisée. Lors de la première recherche autour des "logiciels de géométrie", une relation intéressante a été trouvée avec l'utilisation (usage) de sujets ou de contenus mathématiques qui pourraient être utilisés pour résoudre des problèmes. </p>
+        <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3FMathematical_Games%20%3FMathematical_GamesLabel%20%3Fpublication_date%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FMathematical_Games%20wdt%3AP361%20wd%3AQ80827227.%0A%20%20OPTIONAL%20%7B%20%3FMathematical_Games%20wdt%3AP577%20%3Fpublication_date.%20%7D%0A%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        
     </div>
 
     <script>
